@@ -21,13 +21,16 @@ var obj2 = {
     address : "1",
     college : "2"
 };
+/*
+now __proto__ of obj1 contains the properties defined in obj2, so we can access the properties of obj2 in obj1 See line 29
+ */
 
 obj1.__proto__ = obj2;
 
 console.log("object", obj1.address);
 
 /*
-Obj3 can access the properties defined in obj1.
+Obj3 now contains all the properties of obj1.
  */
 
 var obj3 = Object.create(obj1);
