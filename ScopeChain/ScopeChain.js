@@ -15,9 +15,6 @@ function two (){
     console.log("two",a);
     three();
 }
-/*
-    a = 30 as first it will search for a in its scope,then its outer scope and so on until the global scope.
- */
 
 function three () {
     var a = 40;
